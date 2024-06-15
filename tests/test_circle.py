@@ -11,6 +11,7 @@ def test_circle_area(radius, expected_area):
     c = Circle(radius)
     computed_area = c.get_area()
     assert math.isclose(computed_area, expected_area, rel_tol=1e-9)
+    assert math.isclose(computed_area, expected_area, rel_tol=1e-9)
 
 
 @pytest.mark.parametrize("radius, expected_perimeter", [
@@ -20,4 +21,5 @@ def test_circle_area(radius, expected_area):
 def test_circle_perimetr(radius, expected_perimeter):
     c = Circle(radius)
     computed_area = c.get_area()
+    assert math.isclose(computed_area, expected_perimeter, rel_tol=1e-9)
     assert math.isclose(computed_area, expected_perimeter, rel_tol=1e-9)
