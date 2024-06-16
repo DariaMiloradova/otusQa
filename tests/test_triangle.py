@@ -13,8 +13,9 @@ def test_triangle(side_a, side_b, side_c):
     perimeter = (side_a + side_b + side_c) / 2
     expected_area = math.sqrt(perimeter * (perimeter - side_a) *
                               (perimeter - side_b) * (perimeter - side_c))
-    assert t.get_area() == expected_area
-    assert t.get_perimeter() == perimeter
+    assert t.get_area == expected_area
+    assert t.get_perimetr == perimeter
+
 
 @pytest.mark.parametrize("side_a, side_b, side_c", [
     (1, 1, 3),
