@@ -16,6 +16,3 @@ def test_square(side_a):
 def test_square_negative(side_a):
     with pytest.raises(ValueError, match="нельзя создать квадрат"):
         Square(side_a)
-
-    with pytest.raises(ValueError, match="нельзя создать квадрат"):
-        Square(side_a)
